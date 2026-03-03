@@ -1,0 +1,10 @@
+body {
+    background-color: #121212; /* Koyu tema */
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+h1 {
+    color: #38bdf8; /* Şık bir mavi */
+}
