@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlayda Yolkulu | Portfolyo</title>
+    <!-- CSS Dosyası -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Modern sans-serif fontlar -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome: İkonlar için -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body data-theme="light">
+
+    <!-- Header & Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#hero">İlayda Yolkulu</a>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hakkimda">Hakkımda</a></li>
+                    <li><a href="#egitim">Eğitim</a></li>
+                    <li><a href="#yetenekler">Yetenekler</a></li>
+                    <li><a href="#projeler">Projeler</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                </ul>
+            </nav>
+
+            <div class="theme-toggle">
+                <!-- Tema Değiştirici Scroll/Switch -->
+                <label class="switch" title="Koyu/Açık Tema Değiştir">
+                    <input type="checkbox" id="theme-slider">
+                    <span class="slider round">
+                        <i class="fas fa-sun sun-icon"></i>
+                        <i class="fas fa-moon moon-icon"></i>
+                    </span>
+                </label>
+            </div>
+
+            <!-- Mobil Menü İkonu -->
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Bölümü -->
+    <section id="hero" class="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <p class="greeting"><span id="typing-text"></span><span class="cursor">|</span></p>
+                <h1>Ben <span class="highlight">İlayda Yolkulu</span></h1>
+                <p class="subtitle">Güçlü mimariler inşa eden, güvenliğe ve sistem optimizasyonuna odaklı bir Backend
+                    Geliştiricisiyim. Karmaşık süreçleri daha temiz, verimli ve ölçeklenebilir çözümlere dönüştürmeyi
+                    seviyorum.</p>
+                <div class="hero-buttons">
+                    <a href="#iletisim" class="btn btn-primary">İletişime Geç</a>
+                    <a href="#projeler" class="btn btn-outline">Çalışmalarım</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-wrapper">
+                    <div class="profile-img-container">
+                        <img src="assets/images/profil.jpeg" alt="Profil Fotoğrafı" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hakkımda Bölümü -->
+    <section id="hakkimda" class="section">
+        <div class="container">
+            <h2 class="section-title">Hakkımda</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Yazılım Mühendisliği öğrencisi olarak, bir uygulamanın sadece işlevsel olmasına değil; yüksek
+                        performanslı, güvenli ve sürdürülebilir bir mimariye sahip olmasına odaklanıyorum. Mevcut
+                        sistemleri modern standartlara göre optimize etmek ve karmaşık backend yapılarını en verimli
+                        haliyle kurgulamak temel çalışma disiplinimi oluşturuyor.</p>
+                    <p>Geliştirme süreçlerini uçtan uca ele alarak, yazılımın yayına alınma ve yönetim aşamalarında
+                        modern otomasyon çözümlerinden faydalanıyorum. Siber güvenlik dünyasına olan merakımı bir vizyon
+                        olarak projelerime yansıtıyor; her zaman daha dayanıklı ve ölçeklenebilir dijital deneyimler
+                        inşa etmek için tutkuyla geliştiriyorum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eğitim Bölümü -->
+    <section id="egitim" class="section bg-secondary">
+        <div class="container">
+            <h2 class="section-title">Eğitim</h2>
+            <div class="education-content">
+                <div class="education-card">
+                    <div class="edu-details">
+                        <h3>Ankara Üniversitesi</h3>
+                        <h4>Yazılım Mühendisliği</h4>
+                        <div class="edu-meta">
+                            <span class="edu-date"><i class="fas fa-calendar-alt"></i> 2023 - 2027</span>
+                            <span class="edu-year"><i class="fas fa-graduation-cap"></i> 3. Sınıf</span>
+                            <span class="edu-grade"><i class="fas fa-star" style="color: #f59e0b;"></i> GANO:
+                                3.50 / 4.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yetenekler Bölümü -->
+    <section id="yetenekler" class="section">
+        <div class="container">
+            <h2 class="section-title">Yetenekler</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5 skill-icon" style="color: #E34F26;"></i>
+                    <h3>HTML</h3>
+                    <p>Semantik yapılar ve modern web standartlarına uygun erişilebilir sayfa iskeletleri.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt skill-icon" style="color: #1572B6;"></i>
+                    <h3>CSS</h3>
+                    <p>Responsive tasarımlar, animasyonlar ve modern UI düzenlerini kurgulama yeteneği.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js skill-icon" style="color: #F7DF1E;"></i>
+                    <h3>JavaScript</h3>
+                    <p>Modern ES6+ özellikleri, asenkron yapılar ve istemci/sunucu taraflı dinamik algoritmalar.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-java skill-icon" style="color: #007396;"></i>
+                    <h3>Java</h3>
+                    <p>Nesne yönelimli programlama, bellek yönetimi ve sağlam (robust) arka uç mimarileri.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-leaf skill-icon" style="color: #6DB33F;"></i>
+                    <h3>Spring Boot</h3>
+                    <p>Kurumsal seviyede, güvenli ve ölçeklenebilir RESTful API ve mikroservis mimarileri.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-node-js skill-icon" style="color: #339933;"></i>
+                    <h3>Node.js</h3>
+                    <p>Olay tabanlı (event-driven), yüksek performanslı ve asenkron arka uç servisleri geliştirme.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server skill-icon" style="color: var(--text-primary);"></i>
+                    <h3>Express.js</h3>
+                    <p>Minimalist ve modüler yapısıyla hızlı API uç noktaları tasarlama ve yönlendirme (routing).</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-search skill-icon" style="color: #005571;"></i>
+                    <h3>Elasticsearch</h3>
+                    <p>Büyük veri setleri üzerinde hızlı tam metin araması (full-text search) ve sorgu optimizasyonları.
+                    </p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-docker skill-icon" style="color: #2496ED;"></i>
+                    <h3>Docker</h3>
+                    <p>Uygulama izolasyonu, taşınabilirlik ve konteyner mimarisiyle sürdürülebilir deployment süreçleri.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projeler Bölümü -->
+    <section id="projeler" class="section bg-secondary">
+        <div class="container">
+            <h2 class="section-title">Projeler</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <img src="assets\images\pointcafe.jpeg.png" alt="POINTCAFE Projesi" class="project-photo">
+                    </div>
+                    <div class="project-info">
+                        <h3>POINTCAFE</h3>
+                        <p>Kafeler için modern bir otomasyon ve geliştirilmiş puan sistemi altyapısı. Yoğun olarak
+                            JavaScript ile geliştirilmiş bu projede; hızlı, kullanıcı verilerini anlık yönetebilen ve
+                            arka planda ölçeklenebilir bir mimari kurgulanmıştır.</p>
+                        <a href="https://github.com/ilaydayolkulu/POINTCAFE" target="_blank"
+                            class="btn btn-small btn-outline">İncele <i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim Bölümü -->
+    <section id="iletisim" class="section">
+        <div class="container">
+            <h2 class="section-title">İletişim</h2>
+            <div class="contact-content">
+                <p class="contact-desc">Yeni projeler, iş teklifleri veya sadece merhaba demek için bana aşağıdaki
+                    kanallardan ulaşabilirsiniz. Birlikte harika işler başarabiliriz!</p>
+                <div class="social-links">
+                    <a href="https://github.com/ilaydayolkulu" target="_blank" class="social-icon" title="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ilayda-yolkulu-681210355/" target="_blank" class="social-icon"
+                        title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:ilaydayolkulu.bib@gmail.com" target="_blank" class="social-icon"
+                        title="E-Posta Gönder"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 İlayda Yolkulu. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- JS Dosyası -->
+    <script src="script.js"></script>
+</body>
+
+</html>
